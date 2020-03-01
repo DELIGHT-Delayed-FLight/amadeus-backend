@@ -66,7 +66,7 @@ app.get('/flights', (req, res) => {
             }
         }
 
-        res.send(flightsWithLongLayover);
+        res.send(JSON.stringify(flightsWithLongLayover));
 
     }).catch(function (responseError) {
         console.log(responseError.code);
